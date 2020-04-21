@@ -15,11 +15,13 @@ body{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.089);
     backdrop-filter: opacity(50%);
+    display: none;
 }
 .main-layer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 300px;
 }
 .main-layer button{
     padding: 8px;
@@ -28,6 +30,9 @@ body{
     border: none;
     color: rgb(253, 253, 253);
     font-weight: 500; 
+}
+.main-layer button:hover{
+    box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.75);
 }
 
 /* modal style*/
@@ -44,6 +49,7 @@ body{
     height: 200px;
     background-color: rgba(253, 253, 253, 0.972);
     box-shadow: 0px 1px 10px 1px rgb(175, 175, 175);
+    display: none;
 }
 .modal-box div{
     display: flex;
@@ -89,4 +95,5 @@ form > span{
 .close-text {
     color: #5852d5;
     margin-left: 5px;
+    cursor: pointer;
 }
